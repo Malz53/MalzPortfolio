@@ -1,10 +1,7 @@
 import React from 'react'
+import {navLinks} from "#constants";
 
-const data = [
-        {id: 1, name: "Portfolio"},
-{id: 2, name: "Contact"},
-{id: 3, name: "Projects"},
-]
+
 
 const Navbar = () => {
     return <nav>
@@ -12,7 +9,7 @@ const Navbar = () => {
             <img src="/images/logo.svg" alt="logo" />
             <p className="font-bold">Mbakisi's Portfolio</p>
             <ul>
-                {data.map(({id, name}) => (
+                {navLinks.map(({id, name}) => (
                     <li key={id}>
                         <p>{name}</p>
                     </li>
